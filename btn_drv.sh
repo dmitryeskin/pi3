@@ -28,7 +28,7 @@ while true; do
     touch -d '-5 second' limit
     if [ limit -nt btnTimer ]; then
         touch btnTimer
-        shutdown now
+        shutdown -h now
     fi
 
     sleep 0.1;
